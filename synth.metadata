@@ -4,7 +4,7 @@
       "git": {
         "name": ".",
         "remote": "https://github.com/googleapis/java-video-transcoder.git",
-        "sha": "f4432739962cded390c5d82ab2d435c4a894474d"
+        "sha": "03c65049cca5cd11d929bb1bd6d9ac2ebefb208f"
       }
     },
     {
@@ -19,7 +19,7 @@
       "git": {
         "name": "synthtool",
         "remote": "https://github.com/googleapis/synthtool.git",
-        "sha": "916c10e8581804df2b48a0f0457d848f3faa582e"
+        "sha": "95dbe1bee3c7f7e52ddb24a54c37080620e0d1a2"
       }
     }
   ],
@@ -92,7 +92,6 @@
     "CODE_OF_CONDUCT.md",
     "CONTRIBUTING.md",
     "LICENSE",
-    "README.md",
     "codecov.yaml",
     "google-cloud-video-transcoder/src/main/java/com/google/cloud/video/transcoder/v1beta1/TranscoderServiceClient.java",
     "google-cloud-video-transcoder/src/main/java/com/google/cloud/video/transcoder/v1beta1/TranscoderServiceSettings.java",
