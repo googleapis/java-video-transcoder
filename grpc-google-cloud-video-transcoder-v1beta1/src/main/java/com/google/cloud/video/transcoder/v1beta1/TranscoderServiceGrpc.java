@@ -22,18 +22,7 @@ import static io.grpc.stub.ClientCalls.futureUnaryCall;
 import static io.grpc.stub.ServerCalls.asyncUnaryCall;
 import static io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall;
 
-/**
- *
- *
- * <pre>
- * Using the Transcoder API, you can queue asynchronous jobs for transcoding
- * media into various output formats. Output formats may include different
- * streaming standards such as HTTP Live Streaming (HLS) and Dynamic Adaptive
- * Streaming over HTTP (DASH). You can also customize jobs using advanced
- * features such as Digital Rights Management (DRM), audio equalization, content
- * concatenation, and digital ad-stitch ready content generation.
- * </pre>
- */
+/** */
 @javax.annotation.Generated(
     value = "by gRPC proto compiler",
     comments = "Source: google/cloud/video/transcoder/v1beta1/services.proto")
@@ -456,27 +445,10 @@ public final class TranscoderServiceGrpc {
     return TranscoderServiceFutureStub.newStub(factory, channel);
   }
 
-  /**
-   *
-   *
-   * <pre>
-   * Using the Transcoder API, you can queue asynchronous jobs for transcoding
-   * media into various output formats. Output formats may include different
-   * streaming standards such as HTTP Live Streaming (HLS) and Dynamic Adaptive
-   * Streaming over HTTP (DASH). You can also customize jobs using advanced
-   * features such as Digital Rights Management (DRM), audio equalization, content
-   * concatenation, and digital ad-stitch ready content generation.
-   * </pre>
-   */
+  /** */
   public abstract static class TranscoderServiceImplBase implements io.grpc.BindableService {
 
-    /**
-     *
-     *
-     * <pre>
-     * Creates a job in the specified region.
-     * </pre>
-     */
+    /** */
     public void createJob(
         com.google.cloud.video.transcoder.v1beta1.CreateJobRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.video.transcoder.v1beta1.Job>
@@ -484,13 +456,7 @@ public final class TranscoderServiceGrpc {
       asyncUnimplementedUnaryCall(getCreateJobMethod(), responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Lists jobs in the specified region.
-     * </pre>
-     */
+    /** */
     public void listJobs(
         com.google.cloud.video.transcoder.v1beta1.ListJobsRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.video.transcoder.v1beta1.ListJobsResponse>
@@ -498,13 +464,7 @@ public final class TranscoderServiceGrpc {
       asyncUnimplementedUnaryCall(getListJobsMethod(), responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Returns the job data.
-     * </pre>
-     */
+    /** */
     public void getJob(
         com.google.cloud.video.transcoder.v1beta1.GetJobRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.video.transcoder.v1beta1.Job>
@@ -512,26 +472,14 @@ public final class TranscoderServiceGrpc {
       asyncUnimplementedUnaryCall(getGetJobMethod(), responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Deletes a job.
-     * </pre>
-     */
+    /** */
     public void deleteJob(
         com.google.cloud.video.transcoder.v1beta1.DeleteJobRequest request,
         io.grpc.stub.StreamObserver<com.google.protobuf.Empty> responseObserver) {
       asyncUnimplementedUnaryCall(getDeleteJobMethod(), responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Creates a job template in the specified region.
-     * </pre>
-     */
+    /** */
     public void createJobTemplate(
         com.google.cloud.video.transcoder.v1beta1.CreateJobTemplateRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.video.transcoder.v1beta1.JobTemplate>
@@ -539,13 +487,7 @@ public final class TranscoderServiceGrpc {
       asyncUnimplementedUnaryCall(getCreateJobTemplateMethod(), responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Lists job templates in the specified region.
-     * </pre>
-     */
+    /** */
     public void listJobTemplates(
         com.google.cloud.video.transcoder.v1beta1.ListJobTemplatesRequest request,
         io.grpc.stub.StreamObserver<
@@ -554,13 +496,7 @@ public final class TranscoderServiceGrpc {
       asyncUnimplementedUnaryCall(getListJobTemplatesMethod(), responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Returns the job template data.
-     * </pre>
-     */
+    /** */
     public void getJobTemplate(
         com.google.cloud.video.transcoder.v1beta1.GetJobTemplateRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.video.transcoder.v1beta1.JobTemplate>
@@ -568,13 +504,7 @@ public final class TranscoderServiceGrpc {
       asyncUnimplementedUnaryCall(getGetJobTemplateMethod(), responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Deletes a job template.
-     * </pre>
-     */
+    /** */
     public void deleteJobTemplate(
         com.google.cloud.video.transcoder.v1beta1.DeleteJobTemplateRequest request,
         io.grpc.stub.StreamObserver<com.google.protobuf.Empty> responseObserver) {
@@ -640,18 +570,7 @@ public final class TranscoderServiceGrpc {
     }
   }
 
-  /**
-   *
-   *
-   * <pre>
-   * Using the Transcoder API, you can queue asynchronous jobs for transcoding
-   * media into various output formats. Output formats may include different
-   * streaming standards such as HTTP Live Streaming (HLS) and Dynamic Adaptive
-   * Streaming over HTTP (DASH). You can also customize jobs using advanced
-   * features such as Digital Rights Management (DRM), audio equalization, content
-   * concatenation, and digital ad-stitch ready content generation.
-   * </pre>
-   */
+  /** */
   public static final class TranscoderServiceStub
       extends io.grpc.stub.AbstractAsyncStub<TranscoderServiceStub> {
     private TranscoderServiceStub(io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
@@ -664,13 +583,7 @@ public final class TranscoderServiceGrpc {
       return new TranscoderServiceStub(channel, callOptions);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Creates a job in the specified region.
-     * </pre>
-     */
+    /** */
     public void createJob(
         com.google.cloud.video.transcoder.v1beta1.CreateJobRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.video.transcoder.v1beta1.Job>
@@ -679,13 +592,7 @@ public final class TranscoderServiceGrpc {
           getChannel().newCall(getCreateJobMethod(), getCallOptions()), request, responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Lists jobs in the specified region.
-     * </pre>
-     */
+    /** */
     public void listJobs(
         com.google.cloud.video.transcoder.v1beta1.ListJobsRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.video.transcoder.v1beta1.ListJobsResponse>
@@ -694,13 +601,7 @@ public final class TranscoderServiceGrpc {
           getChannel().newCall(getListJobsMethod(), getCallOptions()), request, responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Returns the job data.
-     * </pre>
-     */
+    /** */
     public void getJob(
         com.google.cloud.video.transcoder.v1beta1.GetJobRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.video.transcoder.v1beta1.Job>
@@ -709,13 +610,7 @@ public final class TranscoderServiceGrpc {
           getChannel().newCall(getGetJobMethod(), getCallOptions()), request, responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Deletes a job.
-     * </pre>
-     */
+    /** */
     public void deleteJob(
         com.google.cloud.video.transcoder.v1beta1.DeleteJobRequest request,
         io.grpc.stub.StreamObserver<com.google.protobuf.Empty> responseObserver) {
@@ -723,13 +618,7 @@ public final class TranscoderServiceGrpc {
           getChannel().newCall(getDeleteJobMethod(), getCallOptions()), request, responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Creates a job template in the specified region.
-     * </pre>
-     */
+    /** */
     public void createJobTemplate(
         com.google.cloud.video.transcoder.v1beta1.CreateJobTemplateRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.video.transcoder.v1beta1.JobTemplate>
@@ -740,13 +629,7 @@ public final class TranscoderServiceGrpc {
           responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Lists job templates in the specified region.
-     * </pre>
-     */
+    /** */
     public void listJobTemplates(
         com.google.cloud.video.transcoder.v1beta1.ListJobTemplatesRequest request,
         io.grpc.stub.StreamObserver<
@@ -758,13 +641,7 @@ public final class TranscoderServiceGrpc {
           responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Returns the job template data.
-     * </pre>
-     */
+    /** */
     public void getJobTemplate(
         com.google.cloud.video.transcoder.v1beta1.GetJobTemplateRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.video.transcoder.v1beta1.JobTemplate>
@@ -775,13 +652,7 @@ public final class TranscoderServiceGrpc {
           responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Deletes a job template.
-     * </pre>
-     */
+    /** */
     public void deleteJobTemplate(
         com.google.cloud.video.transcoder.v1beta1.DeleteJobTemplateRequest request,
         io.grpc.stub.StreamObserver<com.google.protobuf.Empty> responseObserver) {
@@ -792,18 +663,7 @@ public final class TranscoderServiceGrpc {
     }
   }
 
-  /**
-   *
-   *
-   * <pre>
-   * Using the Transcoder API, you can queue asynchronous jobs for transcoding
-   * media into various output formats. Output formats may include different
-   * streaming standards such as HTTP Live Streaming (HLS) and Dynamic Adaptive
-   * Streaming over HTTP (DASH). You can also customize jobs using advanced
-   * features such as Digital Rights Management (DRM), audio equalization, content
-   * concatenation, and digital ad-stitch ready content generation.
-   * </pre>
-   */
+  /** */
   public static final class TranscoderServiceBlockingStub
       extends io.grpc.stub.AbstractBlockingStub<TranscoderServiceBlockingStub> {
     private TranscoderServiceBlockingStub(
@@ -817,99 +677,51 @@ public final class TranscoderServiceGrpc {
       return new TranscoderServiceBlockingStub(channel, callOptions);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Creates a job in the specified region.
-     * </pre>
-     */
+    /** */
     public com.google.cloud.video.transcoder.v1beta1.Job createJob(
         com.google.cloud.video.transcoder.v1beta1.CreateJobRequest request) {
       return blockingUnaryCall(getChannel(), getCreateJobMethod(), getCallOptions(), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Lists jobs in the specified region.
-     * </pre>
-     */
+    /** */
     public com.google.cloud.video.transcoder.v1beta1.ListJobsResponse listJobs(
         com.google.cloud.video.transcoder.v1beta1.ListJobsRequest request) {
       return blockingUnaryCall(getChannel(), getListJobsMethod(), getCallOptions(), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Returns the job data.
-     * </pre>
-     */
+    /** */
     public com.google.cloud.video.transcoder.v1beta1.Job getJob(
         com.google.cloud.video.transcoder.v1beta1.GetJobRequest request) {
       return blockingUnaryCall(getChannel(), getGetJobMethod(), getCallOptions(), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Deletes a job.
-     * </pre>
-     */
+    /** */
     public com.google.protobuf.Empty deleteJob(
         com.google.cloud.video.transcoder.v1beta1.DeleteJobRequest request) {
       return blockingUnaryCall(getChannel(), getDeleteJobMethod(), getCallOptions(), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Creates a job template in the specified region.
-     * </pre>
-     */
+    /** */
     public com.google.cloud.video.transcoder.v1beta1.JobTemplate createJobTemplate(
         com.google.cloud.video.transcoder.v1beta1.CreateJobTemplateRequest request) {
       return blockingUnaryCall(
           getChannel(), getCreateJobTemplateMethod(), getCallOptions(), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Lists job templates in the specified region.
-     * </pre>
-     */
+    /** */
     public com.google.cloud.video.transcoder.v1beta1.ListJobTemplatesResponse listJobTemplates(
         com.google.cloud.video.transcoder.v1beta1.ListJobTemplatesRequest request) {
       return blockingUnaryCall(
           getChannel(), getListJobTemplatesMethod(), getCallOptions(), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Returns the job template data.
-     * </pre>
-     */
+    /** */
     public com.google.cloud.video.transcoder.v1beta1.JobTemplate getJobTemplate(
         com.google.cloud.video.transcoder.v1beta1.GetJobTemplateRequest request) {
       return blockingUnaryCall(getChannel(), getGetJobTemplateMethod(), getCallOptions(), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Deletes a job template.
-     * </pre>
-     */
+    /** */
     public com.google.protobuf.Empty deleteJobTemplate(
         com.google.cloud.video.transcoder.v1beta1.DeleteJobTemplateRequest request) {
       return blockingUnaryCall(
@@ -917,18 +729,7 @@ public final class TranscoderServiceGrpc {
     }
   }
 
-  /**
-   *
-   *
-   * <pre>
-   * Using the Transcoder API, you can queue asynchronous jobs for transcoding
-   * media into various output formats. Output formats may include different
-   * streaming standards such as HTTP Live Streaming (HLS) and Dynamic Adaptive
-   * Streaming over HTTP (DASH). You can also customize jobs using advanced
-   * features such as Digital Rights Management (DRM), audio equalization, content
-   * concatenation, and digital ad-stitch ready content generation.
-   * </pre>
-   */
+  /** */
   public static final class TranscoderServiceFutureStub
       extends io.grpc.stub.AbstractFutureStub<TranscoderServiceFutureStub> {
     private TranscoderServiceFutureStub(io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
@@ -941,64 +742,34 @@ public final class TranscoderServiceGrpc {
       return new TranscoderServiceFutureStub(channel, callOptions);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Creates a job in the specified region.
-     * </pre>
-     */
+    /** */
     public com.google.common.util.concurrent.ListenableFuture<
             com.google.cloud.video.transcoder.v1beta1.Job>
         createJob(com.google.cloud.video.transcoder.v1beta1.CreateJobRequest request) {
       return futureUnaryCall(getChannel().newCall(getCreateJobMethod(), getCallOptions()), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Lists jobs in the specified region.
-     * </pre>
-     */
+    /** */
     public com.google.common.util.concurrent.ListenableFuture<
             com.google.cloud.video.transcoder.v1beta1.ListJobsResponse>
         listJobs(com.google.cloud.video.transcoder.v1beta1.ListJobsRequest request) {
       return futureUnaryCall(getChannel().newCall(getListJobsMethod(), getCallOptions()), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Returns the job data.
-     * </pre>
-     */
+    /** */
     public com.google.common.util.concurrent.ListenableFuture<
             com.google.cloud.video.transcoder.v1beta1.Job>
         getJob(com.google.cloud.video.transcoder.v1beta1.GetJobRequest request) {
       return futureUnaryCall(getChannel().newCall(getGetJobMethod(), getCallOptions()), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Deletes a job.
-     * </pre>
-     */
+    /** */
     public com.google.common.util.concurrent.ListenableFuture<com.google.protobuf.Empty> deleteJob(
         com.google.cloud.video.transcoder.v1beta1.DeleteJobRequest request) {
       return futureUnaryCall(getChannel().newCall(getDeleteJobMethod(), getCallOptions()), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Creates a job template in the specified region.
-     * </pre>
-     */
+    /** */
     public com.google.common.util.concurrent.ListenableFuture<
             com.google.cloud.video.transcoder.v1beta1.JobTemplate>
         createJobTemplate(
@@ -1007,13 +778,7 @@ public final class TranscoderServiceGrpc {
           getChannel().newCall(getCreateJobTemplateMethod(), getCallOptions()), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Lists job templates in the specified region.
-     * </pre>
-     */
+    /** */
     public com.google.common.util.concurrent.ListenableFuture<
             com.google.cloud.video.transcoder.v1beta1.ListJobTemplatesResponse>
         listJobTemplates(
@@ -1022,13 +787,7 @@ public final class TranscoderServiceGrpc {
           getChannel().newCall(getListJobTemplatesMethod(), getCallOptions()), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Returns the job template data.
-     * </pre>
-     */
+    /** */
     public com.google.common.util.concurrent.ListenableFuture<
             com.google.cloud.video.transcoder.v1beta1.JobTemplate>
         getJobTemplate(com.google.cloud.video.transcoder.v1beta1.GetJobTemplateRequest request) {
@@ -1036,13 +795,7 @@ public final class TranscoderServiceGrpc {
           getChannel().newCall(getGetJobTemplateMethod(), getCallOptions()), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Deletes a job template.
-     * </pre>
-     */
+    /** */
     public com.google.common.util.concurrent.ListenableFuture<com.google.protobuf.Empty>
         deleteJobTemplate(
             com.google.cloud.video.transcoder.v1beta1.DeleteJobTemplateRequest request) {
