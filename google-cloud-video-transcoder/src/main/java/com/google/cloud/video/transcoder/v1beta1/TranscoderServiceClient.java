@@ -32,7 +32,6 @@ import com.google.common.util.concurrent.MoreExecutors;
 import com.google.protobuf.Empty;
 import java.io.IOException;
 import java.util.List;
-import java.util.Objects;
 import java.util.concurrent.TimeUnit;
 import javax.annotation.Generated;
 
@@ -162,7 +161,7 @@ public class TranscoderServiceClient implements BackgroundResource {
   public final Job createJob(LocationName parent, Job job) {
     CreateJobRequest request =
         CreateJobRequest.newBuilder()
-            .setParent(Objects.isNull(parent) ? null : parent.toString())
+            .setParent(parent == null ? null : parent.toString())
             .setJob(job)
             .build();
     return createJob(request);
@@ -212,9 +211,7 @@ public class TranscoderServiceClient implements BackgroundResource {
    */
   public final ListJobsPagedResponse listJobs(LocationName parent) {
     ListJobsRequest request =
-        ListJobsRequest.newBuilder()
-            .setParent(Objects.isNull(parent) ? null : parent.toString())
-            .build();
+        ListJobsRequest.newBuilder().setParent(parent == null ? null : parent.toString()).build();
     return listJobs(request);
   }
 
@@ -271,7 +268,7 @@ public class TranscoderServiceClient implements BackgroundResource {
    */
   public final Job getJob(JobName name) {
     GetJobRequest request =
-        GetJobRequest.newBuilder().setName(Objects.isNull(name) ? null : name.toString()).build();
+        GetJobRequest.newBuilder().setName(name == null ? null : name.toString()).build();
     return getJob(request);
   }
 
@@ -319,9 +316,7 @@ public class TranscoderServiceClient implements BackgroundResource {
    */
   public final void deleteJob(JobName name) {
     DeleteJobRequest request =
-        DeleteJobRequest.newBuilder()
-            .setName(Objects.isNull(name) ? null : name.toString())
-            .build();
+        DeleteJobRequest.newBuilder().setName(name == null ? null : name.toString()).build();
     deleteJob(request);
   }
 
@@ -376,7 +371,7 @@ public class TranscoderServiceClient implements BackgroundResource {
       LocationName parent, JobTemplate jobTemplate, String jobTemplateId) {
     CreateJobTemplateRequest request =
         CreateJobTemplateRequest.newBuilder()
-            .setParent(Objects.isNull(parent) ? null : parent.toString())
+            .setParent(parent == null ? null : parent.toString())
             .setJobTemplate(jobTemplate)
             .setJobTemplateId(jobTemplateId)
             .build();
@@ -439,7 +434,7 @@ public class TranscoderServiceClient implements BackgroundResource {
   public final ListJobTemplatesPagedResponse listJobTemplates(LocationName parent) {
     ListJobTemplatesRequest request =
         ListJobTemplatesRequest.newBuilder()
-            .setParent(Objects.isNull(parent) ? null : parent.toString())
+            .setParent(parent == null ? null : parent.toString())
             .build();
     return listJobTemplates(request);
   }
@@ -501,9 +496,7 @@ public class TranscoderServiceClient implements BackgroundResource {
    */
   public final JobTemplate getJobTemplate(JobTemplateName name) {
     GetJobTemplateRequest request =
-        GetJobTemplateRequest.newBuilder()
-            .setName(Objects.isNull(name) ? null : name.toString())
-            .build();
+        GetJobTemplateRequest.newBuilder().setName(name == null ? null : name.toString()).build();
     return getJobTemplate(request);
   }
 
@@ -552,7 +545,7 @@ public class TranscoderServiceClient implements BackgroundResource {
   public final void deleteJobTemplate(JobTemplateName name) {
     DeleteJobTemplateRequest request =
         DeleteJobTemplateRequest.newBuilder()
-            .setName(Objects.isNull(name) ? null : name.toString())
+            .setName(name == null ? null : name.toString())
             .build();
     deleteJobTemplate(request);
   }
