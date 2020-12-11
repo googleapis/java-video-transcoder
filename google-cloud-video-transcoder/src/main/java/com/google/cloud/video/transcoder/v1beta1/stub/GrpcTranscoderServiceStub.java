@@ -168,11 +168,21 @@ public class GrpcTranscoderServiceStub extends TranscoderServiceStub {
         TranscoderServiceStubSettings.newBuilder().build(), clientContext, callableFactory);
   }
 
+  /**
+   * Constructs an instance of GrpcTranscoderServiceStub, using the given settings. This is
+   * protected so that it is easy to make a subclass, but otherwise, the static factory methods
+   * should be preferred.
+   */
   protected GrpcTranscoderServiceStub(
       TranscoderServiceStubSettings settings, ClientContext clientContext) throws IOException {
     this(settings, clientContext, new GrpcTranscoderServiceCallableFactory());
   }
 
+  /**
+   * Constructs an instance of GrpcTranscoderServiceStub, using the given settings. This is
+   * protected so that it is easy to make a subclass, but otherwise, the static factory methods
+   * should be preferred.
+   */
   protected GrpcTranscoderServiceStub(
       TranscoderServiceStubSettings settings,
       ClientContext clientContext,

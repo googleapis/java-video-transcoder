@@ -360,9 +360,9 @@ public class TranscoderServiceClient implements BackgroundResource {
    *
    * @param parent Required. The parent location to create this job template. Format:
    *     `projects/{project}/locations/{location}`
-   * @param job_template Required. Parameters for creating job template.
-   * @param job_template_id Required. The ID to use for the job template, which will become the
-   *     final component of the job template's resource name.
+   * @param jobTemplate Required. Parameters for creating job template.
+   * @param jobTemplateId Required. The ID to use for the job template, which will become the final
+   *     component of the job template's resource name.
    *     <p>This value should be 4-63 characters, and valid characters must match the regular
    *     expression `[a-zA-Z][a-zA-Z0-9_-]&#42;`.
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
@@ -384,9 +384,9 @@ public class TranscoderServiceClient implements BackgroundResource {
    *
    * @param parent Required. The parent location to create this job template. Format:
    *     `projects/{project}/locations/{location}`
-   * @param job_template Required. Parameters for creating job template.
-   * @param job_template_id Required. The ID to use for the job template, which will become the
-   *     final component of the job template's resource name.
+   * @param jobTemplate Required. Parameters for creating job template.
+   * @param jobTemplateId Required. The ID to use for the job template, which will become the final
+   *     component of the job template's resource name.
    *     <p>This value should be 4-63 characters, and valid characters must match the regular
    *     expression `[a-zA-Z][a-zA-Z0-9_-]&#42;`.
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
