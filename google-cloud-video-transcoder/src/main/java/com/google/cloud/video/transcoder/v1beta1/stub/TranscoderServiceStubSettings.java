@@ -60,7 +60,6 @@ import com.google.common.collect.Lists;
 import com.google.protobuf.Empty;
 import java.io.IOException;
 import java.util.List;
-import java.util.Objects;
 import javax.annotation.Generated;
 import org.threeten.bp.Duration;
 
@@ -146,7 +145,7 @@ public class TranscoderServiceStubSettings extends StubSettings<TranscoderServic
 
             @Override
             public Iterable<Job> extractResources(ListJobsResponse payload) {
-              return Objects.isNull(payload.getJobsList())
+              return payload.getJobsList() == null
                   ? ImmutableList.<Job>of()
                   : payload.getJobsList();
             }
@@ -186,7 +185,7 @@ public class TranscoderServiceStubSettings extends StubSettings<TranscoderServic
 
             @Override
             public Iterable<JobTemplate> extractResources(ListJobTemplatesResponse payload) {
-              return Objects.isNull(payload.getJobTemplatesList())
+              return payload.getJobTemplatesList() == null
                   ? ImmutableList.<JobTemplate>of()
                   : payload.getJobTemplatesList();
             }
