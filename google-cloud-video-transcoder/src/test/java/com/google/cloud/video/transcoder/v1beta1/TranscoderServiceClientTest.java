@@ -87,11 +87,11 @@ public class TranscoderServiceClientTest {
     Job expectedResponse =
         Job.newBuilder()
             .setName(JobName.of("[PROJECT]", "[LOCATION]", "[JOB]").toString())
-            .setInputUri("input_uri1707300727")
-            .setOutputUri("output_uri-1273518802")
+            .setInputUri("inputUri470706498")
+            .setOutputUri("outputUri-2119300949")
             .setPriority(-1165461084)
             .setProgress(Progress.newBuilder().build())
-            .setFailureReason("failure_reason1743941273")
+            .setFailureReason("failureReason-1990598546")
             .addAllFailureDetails(new ArrayList<FailureDetail>())
             .setCreateTime(Timestamp.newBuilder().build())
             .setStartTime(Timestamp.newBuilder().build())
@@ -137,11 +137,11 @@ public class TranscoderServiceClientTest {
     Job expectedResponse =
         Job.newBuilder()
             .setName(JobName.of("[PROJECT]", "[LOCATION]", "[JOB]").toString())
-            .setInputUri("input_uri1707300727")
-            .setOutputUri("output_uri-1273518802")
+            .setInputUri("inputUri470706498")
+            .setOutputUri("outputUri-2119300949")
             .setPriority(-1165461084)
             .setProgress(Progress.newBuilder().build())
-            .setFailureReason("failure_reason1743941273")
+            .setFailureReason("failureReason-1990598546")
             .addAllFailureDetails(new ArrayList<FailureDetail>())
             .setCreateTime(Timestamp.newBuilder().build())
             .setStartTime(Timestamp.newBuilder().build())
@@ -275,11 +275,11 @@ public class TranscoderServiceClientTest {
     Job expectedResponse =
         Job.newBuilder()
             .setName(JobName.of("[PROJECT]", "[LOCATION]", "[JOB]").toString())
-            .setInputUri("input_uri1707300727")
-            .setOutputUri("output_uri-1273518802")
+            .setInputUri("inputUri470706498")
+            .setOutputUri("outputUri-2119300949")
             .setPriority(-1165461084)
             .setProgress(Progress.newBuilder().build())
-            .setFailureReason("failure_reason1743941273")
+            .setFailureReason("failureReason-1990598546")
             .addAllFailureDetails(new ArrayList<FailureDetail>())
             .setCreateTime(Timestamp.newBuilder().build())
             .setStartTime(Timestamp.newBuilder().build())
@@ -322,11 +322,11 @@ public class TranscoderServiceClientTest {
     Job expectedResponse =
         Job.newBuilder()
             .setName(JobName.of("[PROJECT]", "[LOCATION]", "[JOB]").toString())
-            .setInputUri("input_uri1707300727")
-            .setOutputUri("output_uri-1273518802")
+            .setInputUri("inputUri470706498")
+            .setOutputUri("outputUri-2119300949")
             .setPriority(-1165461084)
             .setProgress(Progress.newBuilder().build())
-            .setFailureReason("failure_reason1743941273")
+            .setFailureReason("failureReason-1990598546")
             .addAllFailureDetails(new ArrayList<FailureDetail>())
             .setCreateTime(Timestamp.newBuilder().build())
             .setStartTime(Timestamp.newBuilder().build())
@@ -443,7 +443,7 @@ public class TranscoderServiceClientTest {
 
     LocationName parent = LocationName.of("[PROJECT]", "[LOCATION]");
     JobTemplate jobTemplate = JobTemplate.newBuilder().build();
-    String jobTemplateId = "job_template_id-1231822466";
+    String jobTemplateId = "jobTemplateId-597733678";
 
     JobTemplate actualResponse = client.createJobTemplate(parent, jobTemplate, jobTemplateId);
     Assert.assertEquals(expectedResponse, actualResponse);
@@ -469,7 +469,7 @@ public class TranscoderServiceClientTest {
     try {
       LocationName parent = LocationName.of("[PROJECT]", "[LOCATION]");
       JobTemplate jobTemplate = JobTemplate.newBuilder().build();
-      String jobTemplateId = "job_template_id-1231822466";
+      String jobTemplateId = "jobTemplateId-597733678";
       client.createJobTemplate(parent, jobTemplate, jobTemplateId);
       Assert.fail("No exception raised");
     } catch (InvalidArgumentException e) {
@@ -488,7 +488,7 @@ public class TranscoderServiceClientTest {
 
     String parent = "parent-995424086";
     JobTemplate jobTemplate = JobTemplate.newBuilder().build();
-    String jobTemplateId = "job_template_id-1231822466";
+    String jobTemplateId = "jobTemplateId-597733678";
 
     JobTemplate actualResponse = client.createJobTemplate(parent, jobTemplate, jobTemplateId);
     Assert.assertEquals(expectedResponse, actualResponse);
@@ -514,7 +514,7 @@ public class TranscoderServiceClientTest {
     try {
       String parent = "parent-995424086";
       JobTemplate jobTemplate = JobTemplate.newBuilder().build();
-      String jobTemplateId = "job_template_id-1231822466";
+      String jobTemplateId = "jobTemplateId-597733678";
       client.createJobTemplate(parent, jobTemplate, jobTemplateId);
       Assert.fail("No exception raised");
     } catch (InvalidArgumentException e) {
