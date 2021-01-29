@@ -1,5 +1,17 @@
 # Changelog
 
+### [0.1.8](https://www.github.com/googleapis/java-video-transcoder/compare/v0.1.7...v0.1.8) (2021-01-29)
+
+
+### Documentation
+
+* put FPS table in code block ([#88](https://www.github.com/googleapis/java-video-transcoder/issues/88)) ([65d7c6f](https://www.github.com/googleapis/java-video-transcoder/commit/65d7c6fa2ce0917bc77f2e8e94fd53c2c0a432b4))
+
+
+### Dependencies
+
+* update dependency com.google.cloud:google-cloud-shared-dependencies to v0.18.0 ([#92](https://www.github.com/googleapis/java-video-transcoder/issues/92)) ([0ce5f5b](https://www.github.com/googleapis/java-video-transcoder/commit/0ce5f5ba364654ebd4391b73577163c277cdc538))
+
 ### [0.1.7](https://www.github.com/googleapis/java-video-transcoder/compare/v0.1.6...v0.1.7) (2020-12-15)
 
 
