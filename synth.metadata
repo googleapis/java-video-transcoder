@@ -4,7 +4,7 @@
       "git": {
         "name": ".",
         "remote": "https://github.com/googleapis/java-video-transcoder.git",
-        "sha": "711ca135bd6fca1ac0a9b50376f72d879ab0804a"
+        "sha": "8caa6afb3c76bef13441992094a48a83766157d7"
       }
     },
     {
