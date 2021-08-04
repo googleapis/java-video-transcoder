@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.0](https://www.github.com/googleapis/java-video-transcoder/compare/v0.2.0...v0.3.0) (2021-08-04)
+
+
+### Features
+
+* configure initial sp version ([#196](https://www.github.com/googleapis/java-video-transcoder/issues/196)) ([9257b93](https://www.github.com/googleapis/java-video-transcoder/commit/9257b93b0bd383a1513aec16c360da3d7ba449f9))
+
 ## [0.2.0](https://www.github.com/googleapis/java-video-transcoder/compare/v0.1.9...v0.2.0) (2021-07-12)
 
 
