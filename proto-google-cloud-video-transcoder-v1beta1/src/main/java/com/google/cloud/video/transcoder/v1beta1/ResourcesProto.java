@@ -206,8 +206,7 @@ public final class ResourcesProto {
     java.lang.String[] descriptorData = {
       "\n"
           + "5google/cloud/video/transcoder/v1beta1/resources.proto\022%google.cloud.video.tran"
-          + "scoder.v1beta1\032\037google/api/field_behavio"
-          + "r.proto\032\031google/api/resource.proto\032\036google/protobuf/duration.proto\032\037google/protobuf/timestamp.proto\"\307\007\n"
+          + "scoder.v1beta1\032\037google/api/field_behavior.proto\032\031google/api/resource.proto\032\036google/protobuf/duration.proto\032\037google/protobuf/timestamp.proto\"\307\007\n"
           + "\003Job\022\014\n"
           + "\004name\030\001 \001(\t\022\026\n"
           + "\tinput_uri\030\002 \001(\tB\003\340A\004\022\027\n\n"
