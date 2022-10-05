@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.5](https://github.com/googleapis/java-video-transcoder/compare/v1.2.4...v1.2.5) (2022-10-05)
+
+
+### Bug Fixes
+
+* update protobuf to v3.21.7 ([f1c292a](https://github.com/googleapis/java-video-transcoder/commit/f1c292ae52e7dbf86167fb6feb3606f699d01362))
+
 ## [1.2.4](https://github.com/googleapis/java-video-transcoder/compare/v1.2.3...v1.2.4) (2022-10-03)
 
 
