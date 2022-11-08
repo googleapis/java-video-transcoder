@@ -14,34 +14,33 @@
  * limitations under the License.
  */
 
-package com.google.cloud.video.transcoder.v1.stub.samples;
+package com.google.cloud.video.transcoder.v1.samples;
 
-// [START transcoder_v1_generated_TranscoderServiceStubSettings_CreateJob_sync]
-import com.google.cloud.video.transcoder.v1.stub.TranscoderServiceStubSettings;
-import java.time.Duration;
+// [START transcoder_v1_generated_TranscoderService_GetJob_sync]
+import com.google.cloud.video.transcoder.v1.GetJobRequest;
+import com.google.cloud.video.transcoder.v1.Job;
+import com.google.cloud.video.transcoder.v1.JobName;
+import com.google.cloud.video.transcoder.v1.TranscoderServiceClient;
 
-public class SyncCreateJob {
+public class SyncGetJob {
 
   public static void main(String[] args) throws Exception {
-    syncCreateJob();
+    syncGetJob();
   }
 
-  public static void syncCreateJob() throws Exception {
+  public static void syncGetJob() throws Exception {
     // This snippet has been automatically generated and should be regarded as a code template only.
     // It will require modifications to work:
     // - It may require correct/in-range values for request initialization.
     // - It may require specifying regional endpoints when creating the service client as shown in
     // https://cloud.google.com/java/docs/setup#configure_endpoints_for_the_client_library
-    TranscoderServiceStubSettings.Builder transcoderServiceSettingsBuilder =
-        TranscoderServiceStubSettings.newBuilder();
-    transcoderServiceSettingsBuilder
-        .createJobSettings()
-        .setRetrySettings(
-            transcoderServiceSettingsBuilder.createJobSettings().getRetrySettings().toBuilder()
-                .setTotalTimeout(Duration.ofSeconds(30))
-                .build());
-    TranscoderServiceStubSettings transcoderServiceSettings =
-        transcoderServiceSettingsBuilder.build();
+    try (TranscoderServiceClient transcoderServiceClient = TranscoderServiceClient.create()) {
+      GetJobRequest request =
+          GetJobRequest.newBuilder()
+              .setName(JobName.of("[PROJECT]", "[LOCATION]", "[JOB]").toString())
+              .build();
+      Job response = transcoderServiceClient.getJob(request);
+    }
   }
 }
-// [END transcoder_v1_generated_TranscoderServiceStubSettings_CreateJob_sync]
+// [END transcoder_v1_generated_TranscoderService_GetJob_sync]

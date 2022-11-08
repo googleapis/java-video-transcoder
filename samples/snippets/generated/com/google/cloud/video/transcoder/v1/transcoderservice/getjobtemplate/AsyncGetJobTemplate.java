@@ -16,31 +16,35 @@
 
 package com.google.cloud.video.transcoder.v1.samples;
 
-// [START transcoder_v1_generated_TranscoderServiceSettings_CreateJob_sync]
-import com.google.cloud.video.transcoder.v1.TranscoderServiceSettings;
-import java.time.Duration;
+// [START transcoder_v1_generated_TranscoderService_GetJobTemplate_async]
+import com.google.api.core.ApiFuture;
+import com.google.cloud.video.transcoder.v1.GetJobTemplateRequest;
+import com.google.cloud.video.transcoder.v1.JobTemplate;
+import com.google.cloud.video.transcoder.v1.JobTemplateName;
+import com.google.cloud.video.transcoder.v1.TranscoderServiceClient;
 
-public class SyncCreateJob {
+public class AsyncGetJobTemplate {
 
   public static void main(String[] args) throws Exception {
-    syncCreateJob();
+    asyncGetJobTemplate();
   }
 
-  public static void syncCreateJob() throws Exception {
+  public static void asyncGetJobTemplate() throws Exception {
     // This snippet has been automatically generated and should be regarded as a code template only.
     // It will require modifications to work:
     // - It may require correct/in-range values for request initialization.
     // - It may require specifying regional endpoints when creating the service client as shown in
     // https://cloud.google.com/java/docs/setup#configure_endpoints_for_the_client_library
-    TranscoderServiceSettings.Builder transcoderServiceSettingsBuilder =
-        TranscoderServiceSettings.newBuilder();
-    transcoderServiceSettingsBuilder
-        .createJobSettings()
-        .setRetrySettings(
-            transcoderServiceSettingsBuilder.createJobSettings().getRetrySettings().toBuilder()
-                .setTotalTimeout(Duration.ofSeconds(30))
-                .build());
-    TranscoderServiceSettings transcoderServiceSettings = transcoderServiceSettingsBuilder.build();
+    try (TranscoderServiceClient transcoderServiceClient = TranscoderServiceClient.create()) {
+      GetJobTemplateRequest request =
+          GetJobTemplateRequest.newBuilder()
+              .setName(JobTemplateName.of("[PROJECT]", "[LOCATION]", "[JOB_TEMPLATE]").toString())
+              .build();
+      ApiFuture<JobTemplate> future =
+          transcoderServiceClient.getJobTemplateCallable().futureCall(request);
+      // Do something.
+      JobTemplate response = future.get();
+    }
   }
 }
-// [END transcoder_v1_generated_TranscoderServiceSettings_CreateJob_sync]
+// [END transcoder_v1_generated_TranscoderService_GetJobTemplate_async]

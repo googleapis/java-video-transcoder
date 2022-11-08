@@ -16,31 +16,37 @@
 
 package com.google.cloud.video.transcoder.v1.samples;
 
-// [START transcoder_v1_generated_TranscoderServiceSettings_CreateJob_sync]
-import com.google.cloud.video.transcoder.v1.TranscoderServiceSettings;
-import java.time.Duration;
+// [START transcoder_v1_generated_TranscoderService_ListJobs_sync]
+import com.google.cloud.video.transcoder.v1.Job;
+import com.google.cloud.video.transcoder.v1.ListJobsRequest;
+import com.google.cloud.video.transcoder.v1.LocationName;
+import com.google.cloud.video.transcoder.v1.TranscoderServiceClient;
 
-public class SyncCreateJob {
+public class SyncListJobs {
 
   public static void main(String[] args) throws Exception {
-    syncCreateJob();
+    syncListJobs();
   }
 
-  public static void syncCreateJob() throws Exception {
+  public static void syncListJobs() throws Exception {
     // This snippet has been automatically generated and should be regarded as a code template only.
     // It will require modifications to work:
     // - It may require correct/in-range values for request initialization.
     // - It may require specifying regional endpoints when creating the service client as shown in
     // https://cloud.google.com/java/docs/setup#configure_endpoints_for_the_client_library
-    TranscoderServiceSettings.Builder transcoderServiceSettingsBuilder =
-        TranscoderServiceSettings.newBuilder();
-    transcoderServiceSettingsBuilder
-        .createJobSettings()
-        .setRetrySettings(
-            transcoderServiceSettingsBuilder.createJobSettings().getRetrySettings().toBuilder()
-                .setTotalTimeout(Duration.ofSeconds(30))
-                .build());
-    TranscoderServiceSettings transcoderServiceSettings = transcoderServiceSettingsBuilder.build();
+    try (TranscoderServiceClient transcoderServiceClient = TranscoderServiceClient.create()) {
+      ListJobsRequest request =
+          ListJobsRequest.newBuilder()
+              .setParent(LocationName.of("[PROJECT]", "[LOCATION]").toString())
+              .setPageSize(883849137)
+              .setPageToken("pageToken873572522")
+              .setFilter("filter-1274492040")
+              .setOrderBy("orderBy-1207110587")
+              .build();
+      for (Job element : transcoderServiceClient.listJobs(request).iterateAll()) {
+        // doThingsWith(element);
+      }
+    }
   }
 }
-// [END transcoder_v1_generated_TranscoderServiceSettings_CreateJob_sync]
+// [END transcoder_v1_generated_TranscoderService_ListJobs_sync]

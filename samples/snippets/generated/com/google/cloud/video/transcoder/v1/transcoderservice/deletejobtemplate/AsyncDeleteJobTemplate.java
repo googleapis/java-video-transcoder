@@ -16,31 +16,36 @@
 
 package com.google.cloud.video.transcoder.v1.samples;
 
-// [START transcoder_v1_generated_TranscoderServiceSettings_CreateJob_sync]
-import com.google.cloud.video.transcoder.v1.TranscoderServiceSettings;
-import java.time.Duration;
+// [START transcoder_v1_generated_TranscoderService_DeleteJobTemplate_async]
+import com.google.api.core.ApiFuture;
+import com.google.cloud.video.transcoder.v1.DeleteJobTemplateRequest;
+import com.google.cloud.video.transcoder.v1.JobTemplateName;
+import com.google.cloud.video.transcoder.v1.TranscoderServiceClient;
+import com.google.protobuf.Empty;
 
-public class SyncCreateJob {
+public class AsyncDeleteJobTemplate {
 
   public static void main(String[] args) throws Exception {
-    syncCreateJob();
+    asyncDeleteJobTemplate();
   }
 
-  public static void syncCreateJob() throws Exception {
+  public static void asyncDeleteJobTemplate() throws Exception {
     // This snippet has been automatically generated and should be regarded as a code template only.
     // It will require modifications to work:
     // - It may require correct/in-range values for request initialization.
     // - It may require specifying regional endpoints when creating the service client as shown in
     // https://cloud.google.com/java/docs/setup#configure_endpoints_for_the_client_library
-    TranscoderServiceSettings.Builder transcoderServiceSettingsBuilder =
-        TranscoderServiceSettings.newBuilder();
-    transcoderServiceSettingsBuilder
-        .createJobSettings()
-        .setRetrySettings(
-            transcoderServiceSettingsBuilder.createJobSettings().getRetrySettings().toBuilder()
-                .setTotalTimeout(Duration.ofSeconds(30))
-                .build());
-    TranscoderServiceSettings transcoderServiceSettings = transcoderServiceSettingsBuilder.build();
+    try (TranscoderServiceClient transcoderServiceClient = TranscoderServiceClient.create()) {
+      DeleteJobTemplateRequest request =
+          DeleteJobTemplateRequest.newBuilder()
+              .setName(JobTemplateName.of("[PROJECT]", "[LOCATION]", "[JOB_TEMPLATE]").toString())
+              .setAllowMissing(true)
+              .build();
+      ApiFuture<Empty> future =
+          transcoderServiceClient.deleteJobTemplateCallable().futureCall(request);
+      // Do something.
+      future.get();
+    }
   }
 }
-// [END transcoder_v1_generated_TranscoderServiceSettings_CreateJob_sync]
+// [END transcoder_v1_generated_TranscoderService_DeleteJobTemplate_async]
